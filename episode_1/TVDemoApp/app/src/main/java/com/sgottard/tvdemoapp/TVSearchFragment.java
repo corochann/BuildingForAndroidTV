@@ -84,7 +84,7 @@ public class TVSearchFragment extends SearchFragment implements SearchFragment.S
 			mRowsAdapter.clear();
 			ArrayObjectAdapter adapter = new ArrayObjectAdapter(new CardPresenter());
 			adapter.addAll(0, MovieList.list);
-			HeaderItem header = new HeaderItem(0, getResources().getString(R.string.search_results), null);
+			HeaderItem header = new HeaderItem(0, getResources().getString(R.string.search_results));
 			mRowsAdapter.add(new ListRow(header, adapter));
 		}
 	}
