@@ -36,7 +36,7 @@ public class CustomHeadersFragment extends HeadersFragment {
 
 		int id = 0;
 		for (int i = 0; i < fragments.size(); i++) {
-			HeaderItem header = new HeaderItem(id, "Category " + i, null);
+			HeaderItem header = new HeaderItem(id, "Category " + i);
 			ArrayObjectAdapter innerAdapter = new ArrayObjectAdapter();
 			innerAdapter.add(fragments.get(i));
 			adapter.add(id, new ListRow(header, innerAdapter));
